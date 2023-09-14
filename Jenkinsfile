@@ -13,6 +13,18 @@ pipeline {
                 git credentialsId: 'github', url: 'git@github.com:sathishbob/jenkins_test.git'
             }
         }
+        stage('Print 0') {
+            steps {
+                // Get some code from a GitHub repository
+                git credentialsId: 'github', url: 'git@github.com:sathishbob/jenkins_test.git'
+            }
+        }
+        stage('Print 1') {
+            steps {
+                // Get some code from a GitHub repository
+                git credentialsId: 'github', url: 'git@github.com:sathishbob/jenkins_test.git'
+            }
+        }
         stage('Build') {
             steps {
                 // Run Maven on a Unix agent.
